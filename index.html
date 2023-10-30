@@ -9,10 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -20,46 +17,47 @@
 
     <p class="maquina">Jogar com a máquina?</p>
 
-        <form action="">
+    <form action="">
 
-            <section class="sim">
-                <label for=""> <input type="radio" name="cpu" id="cpus" checked="checked">Sim</label>
-            </section>
+        <section class="sim">
+            <label for=""> <input type="radio" name="cpu" id="cpus" checked="checked">Sim</label>
+        </section>
 
-            <label for=""> <input type="radio" name="cpu" id="cpun"> Não </label>
-       </form>
+        <label for=""> <input type="radio" name="cpu" id="cpun"> Não </label>
+    </form>
 
     <div class="container">
-        <table cellspacing="0">
+        <div class="tabuleiro">
+            <table cellspacing="0">
 
-            <tr>
-                <td id="c1" onclick="return checkjogo(this.id)"></td>
-                <td id="c2" onclick="return checkjogo(this.id)"></td>
-                <td id="c3" onclick="return checkjogo(this.id)"></td>
-            </tr>
+                <tr>
+                    <td id="c1" onclick="checkjogo(this.id)"></td>
+                    <td id="c2" onclick="checkjogo(this.id)"></td>
+                    <td id="c3" onclick="checkjogo(this.id)"></td>
+                </tr>
 
-            <tr>
-                <td id="c4" onclick="return checkjogo(this.id)"></td>
-                <td id="c5" onclick="return checkjogo(this.id)"></td>
-                <td id="c6" onclick="return checkjogo(this.id)"></td>
-            </tr>
+                <tr>
+                    <td id="c4" onclick="checkjogo(this.id)"></td>
+                    <td id="c5" onclick="checkjogo(this.id)"></td>
+                    <td id="c6" onclick="checkjogo(this.id)"></td>
+                </tr>
 
-            <tr>
-                <td id="c7" onclick="return checkjogo(this.id)"></td>
-                <td id="c8" onclick="return checkjogo(this.id)"></td>
-                <td id="c9" onclick="return checkjogo(this.id)"></td>
-            </tr>
-        </table>
-    </div>    
+                <tr>
+                    <td id="c7" onclick="checkjogo(this.id)"></td>
+                    <td id="c8" onclick="checkjogo(this.id)"></td>
+                    <td id="c9" onclick="checkjogo(this.id)"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="botao">
         <h3 id="texto" class="animate__animated animate__flash animate__infinite animate__slow animate__delay-2s"></h3>
         <button id="reset" onclick="reset()">
             <span>REINICIAR</span>
         </button>
-
-        
-
-
-
+    </div>
 
 </body>
 

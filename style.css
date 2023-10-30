@@ -7,6 +7,8 @@ body{
     background-image: url("img/fundo1.jpg");
     background-size: cover;
     font-family: helvetica;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .maquina{
@@ -35,13 +37,17 @@ form{
 
 
 .container{
-    background-color: rgba(255, 255, 255, 0.4);
-    width: 500px;
-    height: 500px;
+    width: 100%;
     margin:15px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.tabuleiro{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius:20px ;
 }
 
@@ -99,6 +105,10 @@ button{
     background-color: transparent;
     transform: translateY(8px);
 
+}
+
+.botao{
+    margin:0 auto;
 }
 
 button::after{
